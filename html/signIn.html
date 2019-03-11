@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <title>My css website</title>
+    <!--    Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+    <!--    Bootstrap css-->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signInStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/5801-ss/dist/aws-sdk/dist/aws-sdk.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/5801-ss/dist/amazon-cognito-identity-js/dist/amazon-cognito-identity.min.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/5801-ss/js/auth/UserObject.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/5801-ss/js/auth/login.js"></script>
+    <script type="text/javascript">
+        function userLogin() {
+            var username = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            console.log("init user");
+            var user = new UserObject();
+            user.login(username,password,'user',"https://s3.us-east-2.amazonaws.com/5801-ss/html/request.html");
+        }
+        function adminLogin() {
+            var username = document.getElementById('adEmail').value;
+            var password = document.getElementById('adPassword').value;
+            console.log("init user");
+            var user = new UserObject();
+            user.login(username,password,'admin',"https://s3.us-east-2.amazonaws.com/5801-ss/html/adminApproval.html");
+        }
+    </script>
+</head>
+
+    <body>
+<div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 rounded-left login-form-1">
+                    <h3>Student and Falculty</h3>
+                    
+                        <div class="form-group">
+                            <input type="text" name="email" class="form-control" placeholder="Email" id="email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Password" id="password" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btnSubmit" value="Login" onclick="userLogin()" />
+                        </div>
+                        <div class="form-group">
+                            <a href="register.html" class="btnRegister">Register</a>
+                        </div>
+                    
+                </div>
+                <div class="col-md-6 rounded-right login-form-2">
+                    <div class="login-logo">
+                        <img src="https://s3.us-east-2.amazonaws.com/5801-ss/html/images/ysu_logo.png" alt=""/>
+                    </div>
+                    <h3>Admin</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="adEmail" placeholder="Email" id="adEmail"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="adPassword" class="form-control" placeholder="Password" id="adPassword" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="adSubmit" class="btnSubmit" id="button2" value="Login" onclick="adminLogin()"/>
+                        </div>
+                         
+                </div>
+                </div>
+        </div>    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+</html>

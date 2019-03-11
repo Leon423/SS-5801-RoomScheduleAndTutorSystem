@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+    <title>Tutor Info</title>
+    <!--    Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!--    Bootstrap css-->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tutorFormStyle.css">
+</head>
+<body>
+    <!--  Nav bar  -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="nabar-brand" href="#">Requests</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">View Tutors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  Main container for the body  -->
+    <div class="container">
+        <div class="row">
+            </div>
+            <!--    div for the gray box for form        -->
+            <div class="main-form">
+                <div class="heading">
+                <h1>Tutor Infomation</h1>
+                <hr>
+                </div>
+                <form class="form" method="post" action="#">
+                    <div class="form-group">
+                        <label for="name" class="text-control">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter Tutor's Name">
+                    </div>
+                    <!--      Mondays availability       -->
+                    <div class="form-group">
+                        <label for="monday" class="text-control">Monday</label>
+                            <br>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="monday9-10" >
+                              <label class="form-check-label" for="inlineCheckbox2">9-10</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="monday10-11" value="option3">
+                              <label class="form-check-label" for="inlineCheckbox3">10-11</label>
+                            </div>
+                            <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="monday11-12">
+                                  <label class="form-check-label" for="inlineCheckbox1">11-12</label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="monday1-2">
+                                  <label class="form-check-label" for="inlineCheckbox2">1-2</label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="monday2-3">
+                                  <label class="form-check-label" for="inlineCheckbox3">2-3</label>
+                                </div>
+                                <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="monday3-4">
+                              <label class="form-check-label" for="inlineCheckbox1">3-4</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="monday4-5">
+                              <label class="form-check-label" for="inlineCheckbox2">4-5</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="monday5-6">
+                              <label class="form-check-label" for="inlineCheckbox3">5-6</label>
+                            </div>
+                    </div>
+                    <!--      Tuesday availability       -->
+                    <div class="form-group">
+                        <label for="tuesday" class="text-control">Tuesday</label>
+                            <br>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="tuesday9-10" >
+                              <label class="form-check-label" for="inlineCheckbox2">9-10</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="tuesday10-11" value="option3">
+                              <label class="form-check-label" for="inlineCheckbox3">10-11</label>
+                            </div>
+                            <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="tuesday11-12">
+                                  <label class="form-check-label" for="inlineCheckbox1">11-12</label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="tuesday1-2">
+                                  <label class="form-check-label" for="inlineCheckbox2">1-2</label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="tuesday2-3">
+                                  <label class="form-check-label" for="inlineCheckbox3">2-3</label>
+                                </div>
+                                <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="tuesday3-4">
+                              <label class="form-check-label" for="inlineCheckbox1">3-4</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="tuesday4-5">
+                              <label class="form-check-label" for="inlineCheckbox2">4-5</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="tuesday5-6">
+                              <label class="form-check-label" for="inlineCheckbox3">5-6</label>
+                            </div>
+                    </div>
+                    <!--      Wednesday availability       -->
+                    <div class="form-group">
+                        <label for="wednesday" class="text-control">Wednesday</label>
+                            <br>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="wednesday9-10" >
+                              <label class="form-check-label" for="inlineCheckbox2">9-10</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="wednesday10-11" value="option3">
+                              <label class="form-check-label" for="inlineCheckbox3">10-11</label>
+                            </div>
+                            <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="wednesday11-12">
+                                  <label class="form-check-label" for="inlineCheckbox1">11-12</label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="wednesday1-2">
+                                  <label class="form-check-label" for="inlineCheckbox2">1-2</label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="wednesday2-3">
+                                  <label class="form-check-label" for="inlineCheckbox3">2-3</label>
+                                </div>
+                                <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="wednesday3-4">
+                              <label class="form-check-label" for="inlineCheckbox1">3-4</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="wednesday4-5">
+                              <label class="form-check-label" for="inlineCheckbox2">4-5</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="wednesday5-6">
+                              <label class="form-check-label" for="inlineCheckbox3">5-6</label>
+                            </div>
+                    </div>
+                    <!--      Thursday availabilty         -->
+                    <div class="form-group">
+                        <label for="thursday" class="text-control">Thursday</label>
+                            <br>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="thursday9-10" >
+                              <label class="form-check-label" for="inlineCheckbox2">9-10</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="thursday10-11" value="option3">
+                              <label class="form-check-label" for="inlineCheckbox3">10-11</label>
+                            </div>
+                            <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="thursday11-12">
+                                  <label class="form-check-label" for="inlineCheckbox1">11-12</label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="thursday1-2">
+                                  <label class="form-check-label" for="inlineCheckbox2">1-2</label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="thursday2-3">
+                                  <label class="form-check-label" for="inlineCheckbox3">2-3</label>
+                                </div>
+                                <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="thursday3-4">
+                              <label class="form-check-label" for="inlineCheckbox1">3-4</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="thursday4-5">
+                              <label class="form-check-label" for="inlineCheckbox2">4-5</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="thursday5-6">
+                              <label class="form-check-label" for="inlineCheckbox3">5-6</label>
+                            </div>
+                    </div>
+                    <!--       Friday availabilty             -->
+                    <div class="form-group">
+                        <label for="friday" class="text-control">Friday</label>
+                            <br>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="friday9-10" >
+                              <label class="form-check-label" for="inlineCheckbox2">9-10</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="friday10-11" value="option3">
+                              <label class="form-check-label" for="inlineCheckbox3">10-11</label>
+                            </div>
+                            <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="friday11-12">
+                                  <label class="form-check-label" for="inlineCheckbox1">11-12</label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="friday1-2">
+                                  <label class="form-check-label" for="inlineCheckbox2">1-2</label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="friday2-3">
+                                  <label class="form-check-label" for="inlineCheckbox3">2-3</label>
+                                </div>
+                                <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="friday3-4">
+                              <label class="form-check-label" for="inlineCheckbox1">3-4</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="friday4-5">
+                              <label class="form-check-label" for="inlineCheckbox2">4-5</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="friday5-6">
+                              <label class="form-check-label" for="inlineCheckbox3">5-6</label>
+                            </div>
+                    </div>
+                    <!--         Classes Tutors can teach           -->
+                    <div class="form-group">
+                        <label for="tuesday" class="text-control">Classes</label>
+                            <br>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1501" >
+                              <label class="form-check-label">1501</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1505">
+                              <label class="form-check-label">1505</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="1507">
+                                <label class="form-check-label">1507</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="1510">
+                                <label class="form-check-label">1510</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="1511">
+                                <label class="form-check-label">1511</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1513">
+                              <label class="form-check-label">1513</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1552">
+                              <label class="form-check-label">1552</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1564">
+                              <label class="form-check-label">1564</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1570">
+                              <label class="form-check-label">1570</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1571">
+                              <label class="form-check-label">1571</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1580">
+                              <label class="form-check-label">1580</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1585">
+                              <label class="form-check-label">1585</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1586">
+                              <label class="form-check-label">1586</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="1623">
+                              <label class="form-check-label">2623</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="2651">
+                              <label class="form-check-label">2651</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="2601">
+                              <label class="form-check-label">2601</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="2625">
+                              <label class="form-check-label">2625</label>
+                            </div>
+                            <div class="form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="3717">
+                              <label class="form-check-label">3717</label>
+                            </div>
+                    </div>
+                    <!--     submit button           -->
+                    <input class="btn btn-secondary btn-lg btn-block" type="submit" value="Submit">
+                </form>
+            </div>
+        
+    </div>
+    
+    
+
+</body>
+    
+
+</html>

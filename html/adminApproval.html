@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Request Page</title>
+        <!--    Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <!--    Bootstrap css-->
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="adminApproval.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="nabar-brand" href="../html/adminApproval.html">Requests</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/adminRequest.html">Close Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/adminViewTutors.html">View Tutors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/tutorSchedule.html">Suggested Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/logOut.html">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container border main">
+            <div class="container ">
+                <div class="row header">
+                    <div class="col"><h3>Name</h3>
+                    </div>
+                    <div class="col"><h3>Date</h3>
+                    </div>
+                    <div class="col"><h3>Time</h3>
+                    </div>
+                    <div class="col"><h3>Room #</h3>
+                    </div>
+                    <div class='col'><h3>Reoccuring</h3></div>
+                    <div class="col"><h3>Details</h3>
+                    </div>
+                </div>
+            </div>
+            <div id='dynamicDiv'>
+                <!--  Begin Request      -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row body">
+                            <div class="col">
+                                <span>Brandon Rozzi</span>
+                            </div>
+                            <div class="col">
+                                <span>11/18/2018</span>
+                            </div>
+                            <div class="col">
+                                <span>11:00-12:00</span>
+                            </div>
+                            <div class="col">
+                                <span>556</span>
+                            </div>
+                            <div class="col">
+                                <h5>
+                                    <a href="#collapse1" data-toggle="collapse">
+                                        Details
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapse1" class="collapse">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <textarea rows="5" id="reason" placeholder="This is the reason" disabled></textarea>
+                            </div>
+                            <div class="col">
+                                <textarea rows="3" id="adminReason" placeholder="If the requeat is declined please give a reason"></textarea>
+                                <button class="btn btn-success"><i class="fa fa-check"></i>Approve</button>
+                                <button class="btn btn-danger"><i class="fa fa-times"></i>Decline</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--   End Request     -->
+                <!--   Begin Request     -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row body">
+                            <div class="col">
+                                <span>Tevor Smith</span>
+                            </div>
+                            <div class="col">
+                                <span>11/20/2018</span>
+                            </div>
+                            <div class="col">
+                                <span>11:00-12:00</span>
+                            </div>
+                            <div class="col">
+                                <span>555</span>
+                            </div>
+                            <div class="col">
+                                <h5>
+                                    <a href="#collapse2"  data-toggle="collapse">
+                                        Details
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="collapse2" class="collapse">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <textarea rows="5" id="reason" placeholder="This is the reason" disabled></textarea>
+                            </div>
+                            <div class="col">
+                                <textarea rows="3" id="adminReason" placeholder="If the requeat is declined please give a reason"></textarea>
+                                <button class="btn btn-success"><i class="fa fa-check"></i>Approve</button>
+                                <button class="btn btn-danger"><i class="fa fa-times"></i>Decline</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--   End Request     -->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+        <script type='text/javascript' src='adminApprovalScript.js'>
+        
+        </script>
+    </body>
+
+
+
+
+</html>

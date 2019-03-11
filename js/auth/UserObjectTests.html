@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UserObjectTests</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/5801-ss/dist/aws-sdk/dist/aws-sdk.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/5801-ss/dist/amazon-cognito-identity-js/dist/amazon-cognito-identity.min.js"></script>
+    <script src="UserObject.js"></script>
+    <script src="login.js"></script>
+    <script type="text/javascript">
+    	window.onload = async() => {
+    		var user = new UserObject();
+    		alist = createSignUpUserAttributeList("demoUserAdmin","tdsmith04@student.ysu.edu","adminYID",'2');
+    		user.signUpSSUser("demoUserAdmin","demoP@ssword1",alist);
+		}
+
+    </script>
+</head>
+<body>
+	<p id='p1'></p>
+	<button id='logoutBtn' onclick="user.signOutSSUser()">Log Out!</button>
+</body>
+</html>

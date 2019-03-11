@@ -1,0 +1,1 @@
+API integration testing was performed in the built in test tools with in AWS API Gateway. The tests can be conducted similarly by using a tool such as postman to use the API.

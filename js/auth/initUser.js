@@ -1,0 +1,1 @@
+var user = new UserObject(true);

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>Request Page</title>
+    <!--    Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!--    Bootstrap css-->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <div id='dynamicStyleSheet'>
+        <link rel="stylesheet" href="viewTutors.css">
+    </div>
+</head>
+
+<body>
+  
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="nabar-brand" href="../html/adminApproval.html">Requests</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/adminRequest.html">Close Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">View Tutors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/tutorSchedule.html">Suggested Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/logOut.html">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id='dynamicDiv'>
+    <div class="container">
+        <form class="border border-light p-5">
+            <div class="row" id="row1">
+                <div class="col-md-12">
+                    <h1><span class="fa fa-user-plus"></span>EDIT OR ADD TUTOR</h1>
+                    <button class="btn btn-default contents"> EDIT<span class="fa fa-pencil"></span>
+                    </button>
+                </div>
+            </div> 
+            <div class="row" id="row2">
+                <div class="col-md-12 box">
+                    <div class="form-group contents">
+        <!--                <label for="">Example multiple select</label>-->
+                        <select multiple class="form-control" id="">
+                          <option id="tutorID">Brandon Rozzi</option>
+                          <option id="tutorID">Trevor Smith</option>
+                          <option id="tutorID">Matt Mooney</option>
+                          <option id="tutorID">Drew Wagner</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="row3">
+                <div class="col-md-12">
+                    <button class="btn btn-default bottom">ADD<span class="fa fa-plus"></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    
+   
+
+    
+    
+    <script src='tutorscript.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</html>

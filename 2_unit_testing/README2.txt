@@ -1,0 +1,1 @@
+Test of the Lambda functions were conducted in AWS using the built in test function. To run the unit tests you would need to login to the AWS account and access Lambda. Lambda tests are not global so each IAM user has their own set of tests.

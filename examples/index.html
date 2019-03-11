@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<script type="text/javascript">
+		function displayText() {
+			var xhttp;
+			var data = {
+					"name" : "Trevor",
+				 	"age" : "19"
+				}
+			document.getElementById("textBox").innerHTML = JSON.stringify(data);
+			xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("textBox").innerHTML = this.responseText;
+				} else {
+					document.getElementById("textBox").innerHTML = this.responseText;
+				}
+			};
+			xhttp.open("POST", "https://nzq4vm33t3.execute-api.us-east-2.amazonaws.com/Example1/testresource", true);
+			xhttp.send(JSON.stringify(data));
+		}
+	</script>
+</head>
+<body>
+	<button onclick="displayText()">Click Me!</button>
+	<p id="textBox"></p>
+</body>
+</html>

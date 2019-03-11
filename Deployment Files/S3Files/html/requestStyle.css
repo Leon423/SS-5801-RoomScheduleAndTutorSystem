@@ -1,0 +1,54 @@
+
+form{
+    text-align: center
+}
+
+h1 {
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #c8102e, #d12a40, #da3d52, #e14e64, #e85e75);
+}
+
+textarea {
+    width: 100%;
+}
+
+.datepicker {
+    border: none;
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+.headerRow {
+    background-color: darkgray;
+}
+
+.btn {
+    width: 24%;
+    margin:.5%;
+    margin-top: 2%;
+}
+
+.card {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.card-body {
+    background-color: #929292;
+    margin: 0%;
+    padding: 5% 0% 5% 0%;
+}
+
+.times{
+    font-size: 15px;
+}
+
+
+
+
+

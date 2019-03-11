@@ -1,0 +1,77 @@
+html, body {min-height: 100%;}
+
+body {
+    
+    background-image: linear-gradient(to bottom, #c8102e, #d12a40, #da3d52, #e14e64, #e85e75);
+    background-repeat: no-repeat;
+    
+}
+
+hr {
+    margin-top: 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+span {
+    color: white;
+}
+
+
+
+.border {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hbody{
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-radius: 2px;
+}
+
+.days {
+    background-color: #c8102e;
+    color: white;
+    width: 18%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+
+.head {
+    margin-left: 3%;
+}
+
+.card {
+    margin-left: 2.5%;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.card-body {
+    background-color: #C0C0C0;
+}
+
+.good {
+    background-color: green;
+}
+
+.bad {
+    background-color: red;
+}
